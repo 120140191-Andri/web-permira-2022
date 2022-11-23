@@ -1,0 +1,112 @@
+body {
+    background-color: #F2F3AE;
+    margin: 0;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+.row {
+    width: 100%;
+}
+
+.nav-pc {
+    position: relative;
+    width: 100%;
+    margin-right: 132px;
+    margin-left: 132px;
+}
+
+.nav-pc>.row>.logo {
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav-pc>.row>.navigasi {
+    text-align: right;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.nav-pc>.row>.navigasi>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-pc>.row>.navigasi>ul>li {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+    cursor: pointer;
+}
+
+.nav-pc>.row>.navigasi>ul>.aktif {
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    padding: 10px;
+    background-color: #899443;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.awan{
+    position: absolute;
+    top: 0;
+}
+
+@keyframes moveclouds {
+    0% {margin-left: -80%;}
+	100% {margin-left: 1500px;}
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: -80%;}
+	100% {margin-left: 1500px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: -80%;}
+	100% {margin-left: 1500px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: -80%;}
+	100% {margin-left: 1500px;}
+}
+
+.x1 {
+    animation: moveclouds 15s linear infinite;
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+.x2 {
+	/* left: 200px; */
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+
+    animation: moveclouds 30s linear infinite;
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+}
+
+
